@@ -40,19 +40,34 @@
 // Count the number of properties
 // program to count the number of keys/properties in an object
 
-let student = {
-    name: 'Ariana Grande',
-    age: 21,
-    city: 'Gaibandha',
+// let student = {
+//     name: 'Ariana Grande',
+//     age: 21,
+//     city: 'Gaibandha',
+//     isStudent: true
+// };
+// let count = 0;
+
+// // loop through each key/value
+// for(let key in student) {
+
+//     // increase the count
+//     count++;
+// }
+
+// console.log(count);
+
+// task 5---
+// Loop through an object and print the key-value pairs with their types.
+
+let myObject = {
+
+    name: 'John Doe',
+    age: 25,
+    city: 'Example City',
     isStudent: true
-};
-let count = 0;
+    };
 
-// loop through each key/value
-for(let key in student) {
-
-    // increase the count
-    count++;
-}
-
-console.log(count);
+  for(let key in myObject){
+    console.log(`key: ${key} | type: ${typeof myObject[key]}`)
+  }
