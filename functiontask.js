@@ -61,23 +61,37 @@
 // console.log(d);
 
 
-// task 5--
-// Write a function called odd_even() which takes an integer value and tells whether this value is even or odd. If even return Even. If odd return Odd.
+// // task 5--
+// // Write a function called odd_even() which takes an integer value and tells whether this value is even or odd. If even return Even. If odd return Odd.
 
-function odd_even(w) {
-    if (w%2== 0) {
-        return 'even';
+// function odd_even(w) {
+//     if (w%2== 0) {
+//         return 'even';
         
         
-    }
-    else{
-        return'odd';
+//     }
+//     else{
+//         return'odd';
         
 
-    }
+//     }
 
     
-}
-const c= 4;
-const v =odd_even(c);
-console.log(v);
+// }
+// const c= 4;
+// const v =odd_even(c);
+// console.log(v);
+
+
+
+// ------------------------------------
+
+
+// for (var i = 0; i < 5; i++) {
+//     setTimeout(function () {
+//      console.log(i);
+//   }, 100);
+// }   
+
+console.log(Math.pow(2,3))
+console.log(Math.sqrt      (2,3))
