@@ -48,3 +48,12 @@ const dscNum = [...a].sort(function (a ,b) {
          return(b - a)
      });
     console.log(dscNum);
+
+
+
+
+    const s = [];
+    for(let item of s){
+
+        console.log(typeof(item));
+    }

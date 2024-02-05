@@ -95,5 +95,54 @@
 // The randomNumber variable will contain a random integer between 10 and 20 (inclusive), and it will be logged to the console.
 // --------------------------------------------------------
 
-// Generate a random number between 20 to 30.
-console.log(Math.floor(Math.random() * (30 - 20 + 1) + 20));
+// // Generate a random number between 20 to 30.
+// console.log(Math.floor(Math.random() * (30 - 20 + 1) + 20));
+
+
+// // find out the min number from a array----
+// function min(array) {
+//     let e = array[0];
+//     for (let item of array) {
+//         if (item < e) {
+//             e = item;
+//         }
+        
+//     }
+//     return e;
+    
+// }
+// const s =[12,89,90,45,67,45,8,200,456,34];
+// const x = min(s);
+// console.log(x);
+
+// find out the expensive phone from many phones-----
+const phones = [
+    {name: 'Oppo', price: 15000},
+    {name: 'Samsung', price: 20000},
+    {name: 'Iphone', price: 100000},
+    {name: 'Xaomi', price: 10000},
+]
+
+function expensive(phones) {
+
+    let c = phones[0];
+    for (const phone of phones ) {
+        if (phone.price > c.price) {
+         c = phone;
+        
+        }
+        
+    }
+    return c;
+    
+}
+
+const g = expensive(phones);
+console.log(g)
+
+
+
+
+const a =0 ;
+console.log(typeof(a));
+
