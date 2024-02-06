@@ -27,7 +27,7 @@
 
 
 
-// // task 3---
+// // // task 3---
 
 // function sortMaker(arr) {
 
@@ -44,37 +44,38 @@
 //         return 'give a meaningful array';
 //     }
 // }
-// const s =[4, -2];
+// const s =[3, 5];
 // const a = sortMaker(s);
 // console.log(a);
 
 
 // // task 2--
-// function matchFinder(string1, string2) {
-//     if (typeof string1 !=='string' && typeof string2 !=='string' ) {
-//         return 'please enter a valid string';
-//     }
+function matchFinder(string1, string2) {
+    if (typeof string1 !=='string' && typeof string2 !=='string' ) {
+        return 'please enter a valid string';
+    }
+    // if(string1.indexOf(string2) !== -1){
+    //     return true;
+    // }
+    // else{
+    //     return false;
+    // }
+       const result = string1.includes(string2);
+       return result;
+        
+    }       
     
-//         if(string1.indexOf(string2) !== -1){
-//             return true;
-//         }
-//         else{
-//             return false;
-//         }
-        
-        
-//     }
 
-// const s ='John Doe';
-// const e = 'ohn';
-// const c = matchFinder(s,e);
-// console.log(c);
+const s ='Javascript';
+const e = 'Code';
+const c = matchFinder(s,e);
+console.log(c);
 
-// task 1
-function cubeNumber(number) {
-    const cube = number ** 3;
-    return cube;
-}
-const s = 3;
-const a = cubeNumber(s);
-console.log(a);
+// // task 1
+// function cubeNumber(number) {
+//     const cube = number ** 3;
+//     return cube;
+// }
+// const s = 3;
+// const a = cubeNumber(s);
+// console.log(a);
