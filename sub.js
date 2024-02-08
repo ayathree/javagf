@@ -59,6 +59,33 @@
 
 
 
+function monthlySavings(arr , livingCost) {
+    if ( typeof livingCost !== 'number') {
+        return 'invalid input';   
+    }
+    if (Array.isArray(arr)) {
+        let total = 0;
+        for (let item of arr) {
+        if (item >= 3000) {
+        const payment = item-(item*20/100);
+        total += payment;
+        } 
+        else{
+        total += item;
+        }
+      }  
+      const savings = total-livingCost;
+        if (savings < 0) {
+        return 'earn more';
+      }
+        return savings ; 
+    }
+    else{
+    return 'invalid input';
+    }
+}
+console.log(monthlySavings(100, [ 900 , 2700 , 3400]))
+
 
 
 
