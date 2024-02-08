@@ -1,6 +1,6 @@
 function calculateMoney(ticketSale) {
     if (ticketSale < 0) {
-        return '"Invalid Number"';
+        return 'Invalid Number';
         
     }
     const calculation = ( ticketSale * 120) - ( 500 + (8 * 50) );
@@ -36,7 +36,7 @@ function deleteInvalids(array) {
         return result;    
     }
     else{
-        return '"Invalid Array"';
+        return 'Invalid Array';
     }
 }
 
@@ -60,7 +60,7 @@ function password(obj) {
 
 
 function monthlySavings(arr , livingCost) {
-    if ( typeof livingCost !== 'number') {
+    if ( typeof livingCost !== 'number' || livingCost < 0) {
         return 'invalid input';   
     }
     if (Array.isArray(arr)) {
@@ -76,7 +76,7 @@ function monthlySavings(arr , livingCost) {
       }  
       const savings = total-livingCost;
         if (savings < 0) {
-        return '"earn more"';
+        return 'earn more';
       }
         return savings ; 
     }
